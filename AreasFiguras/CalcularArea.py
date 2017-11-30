@@ -36,14 +36,27 @@ def CalcularAreas(n):
         altura = float(input('Ingrese valor de la altura del rectangulo: '))
         areaRectan=area_Rectangulo(base,altura)
 
+    elif n == 4:
+        # Calcular area circulo
+        def calcularAreaCirculo():
+
+            area = 3.1416 * radio * radio
+            print(area)
+            return area
+
+        radio = float(input("Ingrese el radio"))
+        calcularAreaCirculo()
 
     else:
         print('')
         print('Inválido')
 
+
+
 print("CALCULAR AREA" )
 print("1. Calcular el area del cuadrado" )
 print("2. Calcular el area del Triangulo" )
-print("3. Calcular el area del Triangulo" )
+print("3. Calcular el area del Rectangulo" )
+print("4. Calcular el area del Circulo" )
 n = int(input("Ingrese el numero de seleccion: "))
 CalcularAreas(n)
